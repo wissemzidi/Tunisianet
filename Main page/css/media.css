@@ -1,1 +1,12 @@
-{\rtf1}
+@media screen and (max-width: 800px) {
+  #header__main .search-bar{
+    margin-top: 3rem;
+  }
+  #header__main > p{
+    margin: .5em 0;
+  }
+  #header__main ul{
+    margin: .5em 0;
+  }
+
+}
