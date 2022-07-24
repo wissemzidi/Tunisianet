@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+
+  /* font-sizes */
+  --fs-huge: clamp(2rem, 2vw, 4rem);
+  --fs-big: clamp(1.5rem, 1.5vw, 3rem);
+  --fs-normal: clamp(1.2rem, 1.2vw, 2rem);
+  --fs-min: clamp(1rem, 1vw, 1.5rem);
+  --fs-extra-min: clamp(.75rem, .8vw, 1.2rem);
+
+  /* font-weight */
+  --fw-main: 700;
+  --fw-normal: 500;
+  --fw-min: 400;
+  --fw-extra-min: 350;
+
+  /* colors */
+  --clr-background: #8ECAE6;
+  --clr-font: #272727;
+  --clr-black-low: #4c4c4c;
+  --clr-white-low: #dfdfdf;
+  --clr-primary-400: #219EBC;
+  --clr-primary-500: #023047;
+  --clr-primary-600: #FFB703;
+  --clr-primary-700: #FB8500;
+}
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: inset 0 0 12px -1px var(--clr-primary-700);
+}
+
+
+*,
+*::before,
+*::after{
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html{
+	display: grid;
+	position: relative;
+	place-items: center;
+	width: 100vw;
+	background-color: var(--clr-background);
+	overflow-x: hidden;
+}
