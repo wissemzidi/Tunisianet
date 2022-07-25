@@ -96,13 +96,27 @@ header{
   border-radius: 10px 0 0 10px;
 }
 
-#header__main .search-bar input{
+#header__main .search-bar .right_side{
+  display: flex;
+  background-color: white;
+}
+
+#header__main .search-bar .right_side input{
   width: clamp(10rem, 20vw, 20rem);
   outline: none;
   border-radius: 0 10px 10px 0;
   border: none;
-  background-color: white;
-  box-shadow: inset 0 0 10px -5px black;
+  /* box-shadow: inset 0 0 10px -5px black; */
+}
+
+#header__main .search-bar .right_side button{
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  background-color: red;
 }
 
 #header__main ul{
