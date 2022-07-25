@@ -1,6 +1,12 @@
 @media screen and (max-width: 800px) {
+  #header__main{
+    min-height: 4.5rem;
+  }
   #header__main .search-bar{
     margin-top: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #header__main > p{
     margin: .5em 0;

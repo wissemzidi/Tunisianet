@@ -16,21 +16,58 @@
   
   <header>
     <main id="header__main">
-      <p>Tunsianet</p>
+      <p>Tunisianet</p>
       <div class="search-bar">
-        <button type="button"><p>select-produit</p></button>
+        <button type="button"><p>select-product</p></button>
         <div class="right_side">
           <input type="text">
-          <button><img height="20" width="20" src="Main page/assets/icons/loupe.png" alt=""></button>
+          <button type="button" onclick="console.log('searching...')">
+            <img height="20" width="20" src="Main page/assets/icons/loupe.png" alt="">
+          </button>
         </div>
       </div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </main>
   </header>
+
+  <main id="header__second_line">
+    <div id="content">
+      <div class="first_box" onmouseover="afficheBox1()" onmouseleave="hideBox1()">
+        <button type="button">Tech</button>
+        <ul id="list1">
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+        </ul>
+      </div>
+      <div class="second_box" onmouseover="afficheBox2()" onmouseleave="hideBox2()">
+        <button type="button">Tech</button>
+        <ul id="list2">
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+        </ul>
+      </div>
+      <div class="third_box" onmouseover="afficheBox3()" onmouseleave="hideBox3()">
+        <button type="button">Tech</button>
+        <ul id="list3">
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+          <li><a href="">test</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
   
 </body>
 <script type="text/javascript" src="Main page/js/main.js"></script>
