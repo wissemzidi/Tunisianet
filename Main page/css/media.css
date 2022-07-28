@@ -14,5 +14,7 @@
   #header__main ul{
     margin: .5em 0;
   }
-
+  #header__second_line{
+    padding: 1.5rem 0;
+  }
 }
