@@ -47,6 +47,7 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 body{
@@ -205,6 +206,9 @@ header{
 }
 
 #header__second_line .first_box ul li a{
+  display: flex;
+  justify-content: center;
+  text-align: center;
   color: var(--clr-font);
   text-decoration: none;
   border-radius: .5em;
@@ -244,6 +248,18 @@ header{
   100%{
     opacity: 1;
   }
+}
+
+#side_bar_btn{
+  display: none;
+  list-style: none;
+  background-color: transparent;
+}
+
+#side_bar_btn li button{
+  color: var(--clr-font);
+  background-color: transparent;
+  
 }
 
 
@@ -323,6 +339,12 @@ header{
   width: min(85rem, 100vw);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.page2__inner__a__line1{
+  width: 100%;
+  display: flex;
   justify-content: space-around;
 }
 
@@ -436,6 +458,7 @@ header{
 
 
 #page3{
+  width: 100%;
   margin: 5rem 0;
   min-height: 60vh;
   display: grid;
@@ -449,14 +472,14 @@ header{
 }
 
 #page3__container{
-  width: min(85rem, 100vh);
+  width: min(85rem, 100%);
   display: flex;
   justify-content: space-around;
   gap: 2vw;
 }
 
 #page3__inner1{
-  width: 40%;
+  width: min(100%, 20rem);
   text-align: right;
 }
 
@@ -554,7 +577,7 @@ footer{
 }
 
 #footer__heading__links a{
-  height: 3rem;
+  height: clamp(2rem, 1vw, 3rem);
   width: fit-content;
   background-color: rgb(143, 143, 143);
   border-radius: 50px;
@@ -563,8 +586,8 @@ footer{
 #footer__heading__links a img{
   background-color: white;
   border-radius: 50px;
-  height: 3rem;
-  width: 3rem;
+  height: clamp(2rem, 1vw, 3rem);
+  width: clamp(2rem, 1vw, 3rem);
   filter: grayscale(70%);
 }
 
@@ -636,7 +659,7 @@ footer{
   top: 1rem;
   bottom: 0;
   width: 30%;
-  background-color: rgba(255, 255, 255, 0.073);
+  background-color: transparent;
 }
 
 #inner__send-mail__box{
