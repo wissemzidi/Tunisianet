@@ -58,7 +58,7 @@ body{
 
 header{
   width: 100%;
-  background-image: linear-gradient(to right bottom, #2f7dc710, #8ebeeb18);
+  background-image: linear-gradient(to top right, #2f7dc710, #8ebeeb48);
   position: sticky;
   top: 0;
   z-index: 999999;
@@ -97,7 +97,7 @@ header{
 }
 
 #header__main ul li a:hover{
-  color: white;
+  color: rgba(121, 121, 121, 0.938);
 }
 
 
@@ -310,7 +310,7 @@ header{
   padding: .3em .5em;
   border: 3px red solid;
   cursor: default;
-  transition: .3s all ease-out;
+  transition: .2s all ease-out;
 }
 
 #page2 > h2:hover{
@@ -329,7 +329,7 @@ header{
 #page2__inner{
   width: 23%;
   border: 1px solid black;
-  transition: 0.3s all ease-out;
+  transition: 0.2s all ease-out;
   box-shadow: 10px 5px 10px -1px rgba(0, 0, 0, 0.3);
 }
 
@@ -497,7 +497,6 @@ header{
 
 #page4{
   margin-top: 10rem;
-  margin-bottom: 20rem;
   width: 100%;
   height: fit-content;
   display: grid;
@@ -513,5 +512,215 @@ header{
 }
 
 #page4 #conainter img{
-  width: 15%;
+  margin: 1rem;
+  width: 11.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  min-height: 39.5rem;
+  width: 100%;
+  background-color: #026BA4;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+#footer__heading{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: min(85rem, 100vw);
+  margin: 2rem 12%;
+  color: var(--clr-font);
+}
+
+#footer__heading__links{
+  margin-top: .5rem;
+  height: fit-content;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#footer__heading__links a{
+  height: 3rem;
+  width: fit-content;
+  background-color: rgb(143, 143, 143);
+  border-radius: 50px;
+}
+
+#footer__heading__links a img{
+  background-color: white;
+  border-radius: 50px;
+  height: 3rem;
+  width: 3rem;
+  filter: grayscale(70%);
+}
+
+#footer__heading__links a:hover img{
+  filter: grayscale(0);
+}
+
+#footer__container{
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-50%);
+  background-color: rgba(48, 48, 48, 0.251);
+  width: min(85rem, 100vw);
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer__cinner{
+  margin: 2rem;
+  position: absolute;
+  left: 0;
+  display: flex;
+  gap: 10%;
+  width: 70%;
+}
+
+#footer__inner{
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  /* place-items: center; */
+  /* gap: 1rem; */
+}
+
+#footer__inner h3{
+  width: fit-content;
+  height: fit-content;
+  margin-top: 1rem;
+  margin-left: -1.1rem;
+  margin-bottom: 2rem;
+  padding: 0.2em 0.4em;
+  color: rgb(235, 235, 235);
+}
+
+#footer__inner a{
+  margin-top: .5em;
+  margin-left: 0;
+  padding: 0;
+  height: fit-content;
+  color: rgb(0, 0, 0, .8);
+  text-decoration: none;
+  transition: .1s all ease-out;
+  padding: .5em 1em;
+}
+
+#footer__inner a:hover{
+  animation: hover_move .4s ease-out;
+  color: rgb(209, 209, 209);
+}
+
+
+
+.footer_last-inner{
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  bottom: 0;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.073);
+}
+
+#inner__send-mail__box{
+  margin: 1rem auto;
+  width: 80%;
+  height: 20rem;
+  background-color: #D9D9D9;
+  border-radius: 1rem;
+}
+
+#inner__send-mail__box h4{
+  font-weight: var(--fw-min);
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  color: #026BA4;
+}
+
+#inner__send-mail__box__input{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#inner__send-mail__box__input .input1{
+  margin: 1rem auto;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  width: 80%;
+  padding: 5px 10px;
+}
+
+#inner__send-mail__box__input_2{
+  width: 80%;
+  height: 11rem;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+#inner__send-mail__box__input_2 input[type='text']{
+  text-align: top left;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 8rem;
+}
+
+#inner__send-mail__box__input_2 input[type='submit']{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: .2em .4em;
+  background-color: #D9D9D9;
+  border-radius: 5px 0 0 0;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+#inner__send-mail__contact{
+  display: grid;
+  padding: 1rem;
+  width: 80%;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin-top: 5rem;
+  height: 7rem;
+  background-color: #ffff;
+  border-radius: 10px 10px 0 10px;
+}
+
+#inner__send-mail__contact > h3{
+  margin: 0;
+  color: var(--clr-font);
+}
+
+.inner__send-mail__contact__info{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
