@@ -60,13 +60,48 @@ function hideBox5() {
 
 
 
+  // Side bar
+const body = document.querySelector("body")
+const sideBar = document.querySelector("#side_bar")
+
+
+function showSideBar() {
+  console.log("showing side bar...")
+  sideBar.style.display = 'block'
+  // sideBar.style.right = '0vw'
+  body.style.overflow = 'hidden'
+  sideBar.style.overflowX = 'hidden'
+  sideBar.style.overflow = 'auto'
+  sideBar.style.animation = 'showing_side_bar .3s ease-out forwards'
+}
+function hideSideBar() {
+  console.log("hiding side bar...")
+  sideBar.style.animation = 'hiding_side_bar .3s ease-out forwards'
+  body.style.overflow = 'auto'
+}
+
+      // More
+const moreBtn = document.querySelector('#more1_btn')
+const more1 = document.querySelector('#more1')
+moreBtn.addEventListener('click', (event) => {
+  if (moreBtn.getAttribute('data-more1') === 'close'){
+    console.log('opening more1...')
+    moreBtn.setAttribute('data-more1', 'open')
+    more1.style.display = 'block'
+    // more1.style.animation = 'add_height .3s ease-out forwards'
+    moreBtn.style.transform = 'rotate(90deg)'
+  } else {
+    console.log('closing more1...')
+    moreBtn.setAttribute('data-more1', 'close')
+    // more1.style.animation = 'minus_height .3s ease-out forwards'
+    more1.style.display = 'none'
+    moreBtn.style.transform = 'rotate(0deg)'
+  }
+})
 
 
 
 
 
-
-
-
-
+  // styling
 document.getElementById("p2h").style.borderColor = 'red'

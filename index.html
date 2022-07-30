@@ -10,10 +10,63 @@
   <link rel="shortcut icon" href="">
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <title>Tunsianet</title>
+  <title>Tunisianet</title>
 </head>
 <body>
-  
+
+
+  <!-- side bar for mobile phones -->
+  <aside id="side_bar">
+    <div id="sideBar__container">
+      <div id="sideBar__inner">
+        <div id="head">
+          <h3>Products</h3>
+          <div id="hide_side_bar">
+            <button id="hide_side_bar_btn" onclick=hideSideBar()>
+              <img src="./Main page/assets/icons/delete.png" alt="Close">
+            </button>
+          </div>
+        </div>
+        <main>
+          <ul>
+            <li>
+              <a href="#">Test</a>
+              <button data-more1="close" id="more1_btn">></button>
+            </li>
+            <ul id="more1">
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+            </ul>
+            <li>
+              <a href="#">Test</a>
+              <button onclick=showMore()>></button>
+            </li>
+            <li>
+              <a href="#">Test</a>
+              <button onclick=showMore()>></button>
+            </li>
+            <li>
+              <a href="#">Test</a>
+              <button onclick=showMore()>></button>
+            </li>
+            <li>
+              <a href="#">Test</a>
+              <button onclick=showMore()>></button>
+            </li>
+            <li>
+              <a href="#">Test</a>
+              <button onclick=showMore()>></button>
+            </li>
+          </ul>
+        </main>
+      </div>
+    </div>
+  </aside>
+
+
+
   <header>
     <main id="header__main">
       <p>Tunisianet</p>
@@ -33,7 +86,7 @@
       </ul>
       <ol id="side_bar_btn">
         <li>
-          <button type="button">Home</button>
+          <button id="show_side_bar_btn" type="button" onclick=showSideBar()><img src="./Main page/assets/icons/menu.png" alt="Menu"></button>
         </li>
       </ol>
     </main>
@@ -98,7 +151,7 @@
 
 
 
-
+<!-- page content -->
   <section id="page1">
     <div>
       <h2>Hello, We are Tunisianet</h2>
@@ -266,7 +319,7 @@
             <div id="inner__send-mail__box__input">
               <input class="input1" type="email" placeholder="E-Mail">
               <div id="inner__send-mail__box__input_2">
-                <input type="text" placeholder="">
+                <textarea placeholder="Hello"></textarea>
                 <input type="submit"></input>
               </div>
             </div>
