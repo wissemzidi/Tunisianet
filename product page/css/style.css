@@ -138,8 +138,9 @@ body{
 }
 
 #hide_side_bar button img{
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
 }
 
 
@@ -259,17 +260,19 @@ header{
 }
 
 #side_bar_btn li button{
+  margin-top: .25em;
   color: var(--clr-font);
   background-color:transparent;
-  padding: .2em .4em;
+  padding: 0em .4em;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
 #show_side_bar_btn img{
   padding-top: .5em;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.8rem;
+  width: 1.7rem;
 }
 
 
@@ -429,146 +432,111 @@ header{
 
   /* page */
 #page{
-  min-height: 100vh;
+  padding: 2rem 0;
+  min-height: 90vh;
   width: 100%;
-  background-color: transparent;
+  /* background-color: red; */
   display: grid;
   place-items: center;
 }
 
-#page > h2{
-  width: fit-content;
-  margin-top: 4rem;
-  padding: .3em .5em;
-  border: 3px red solid;
-  cursor: default;
-  transition: .2s all ease-out;
-}
-
-#page > h2:hover{
-  background-color: red;
-  color: white;
-}
-
 #page__container{
-  margin-top: 5rem;
   width: min(85rem, 100vw);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.page__inner__a__line1{
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  min-height: 100%;
+  display: grid;
+  justify-content: center;
+  /* place-items: center; */
+  /* background-color: blue; */
 }
 
 #page__inner{
-  width: 23%;
-  border: 1px solid black;
-  transition: 0.2s all ease-out;
-  box-shadow: 10px 5px 10px -1px rgba(0, 0, 0, 0.3);
-}
-
-#page__inner:hover{
-  transform: scale(1.125);
-  box-shadow: 20px 10px 15px -1px rgba(0, 0, 0, 0.5);
-}
-
-#page__inner a{
-  width: 100%;
-  text-decoration: none;
-  color: var(--clr-font);
-  position: relative;
-}
-
-#page__inner:hover{
-  border-color: red;
-  border-top-color: var(--clr-black-low);
-}
-
-
-#page__inner a img{
-  width: 100%;
-  z-index: -1;
-}
-
-#page__inner a h2{
-  margin-top: -2.5rem;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  border: solid 1px black;
-  border-bottom: transparent;
-  background-color: transparent;
-}
-
-#page_inner a > h3{
-  color: red;
-}
-
-.page__inner__a__line2{
+  padding: 1rem;
+  width: fit-content;
+  height: fit-content;
   display: flex;
-  justify-content: space-around;
-  margin: 6rem 0;
+  width: 100%;
 }
 
-.page__more-btn{
-  font-size: var(--fs-normal);
-  padding: .3em .6em;
-  text-decoration: none;
-  border: 1px solid black;
-  margin-bottom: 2rem;
+.page__inner__img img{
+  width: 100%;
+}
+
+.page__inner__content{
+  margin-top: 5%;
+  height: fit-content;
+  width: 70%;
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
+}
+
+.page__inner__content p{
   color: var(--clr-font);
-  transition: 0.3s all ease-out;
+  font-size: clamp(.6rem, 5vw, 1rem);
+  font-weight: var(--fw-normal);
+  opacity: 1;
+}
+
+.page__inner__content button{
   position: relative;
+  margin-left: auto;
+  margin-right: 2rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: var(--fs-min);
+  color: rgb(24, 143, 49);
+  padding: .5em 1em;
+  border: none;
+  border-radius: 1em;
+  background-color: rgba(40, 40, 40, 0.1);
+  overflow: hidden;
   z-index: 1;
+  transition: .2s all ease-out;
 }
-
-.page__more-btn::before{
+.page__inner__content button::before{
   content: '';
   position: absolute;
-  inset: 0;
-  left: 50%;
-  width: 0;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  width: 10%;
   background-color: var(--clr-primary-400);
+  opacity: 0;
+  transition: .2s all ease-out;
   z-index: -1;
-  transition: .3s all ease-out;
-  opacity: .7;
 }
 
-.page__more-btn::after{
+.page__inner__content button::after{
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
   left: 50%;
-  width: 0;
+  width: 10%;
   background-color: var(--clr-primary-400);
+  opacity: 0;
+  transition: .2s all ease-out;
   z-index: -1;
-  transition: .3s all ease-out;
-  opacity: .7;
 }
 
-.page__more-btn:hover{
+.page__inner__content button:hover,
+.page__inner__content button:focus-visible{
   color: white;
-  border-color: var(--clr-primary-400);
 }
 
-.page__more-btn:hover::before{
-  width: 50%;
+.page__inner__content button:hover::before,
+.page__inner__content button:focus-visible::before{
   opacity: 1;
-}
-
-.page__more-btn:hover::after{
   width: 50%;
-  left: 0;
-  opacity: 1;
 }
 
-
+.page__inner__content button:hover::after,
+.page__inner__content button:focus-visible::after{
+  opacity: 1;
+  width: 50%;
+}
 
 
 

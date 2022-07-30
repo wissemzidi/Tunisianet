@@ -10,6 +10,8 @@
   #side_bar_btn{
     display: block;
   }
+
+
   #header__main{
     min-height: 4.5rem;
   }
@@ -28,21 +30,20 @@
   #header__second_line{
     display: none;
   }
-  #page3__container{
-    gap: 2rem;
-    margin: 1rem;
+
+
+  #page__container{
+    width: 100vw;
     display: grid;
     place-items: center;
   }
-  #page3__inner1{
-    margin-left: 10vw;
-    width: 70%;
+  .page__inner__content{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0;
   }
-  #page3__inner2{
-    margin-top: 2rem;
-    margin-left: -10vw;
-    width: 70%;
-  }
+
+
   footer{
     min-height: 0;
     height: 120rem;
@@ -67,41 +68,6 @@
 
 @media screen and (max-width: 650px) {
 
-  #page2__container{
-    width: 100%;
-    display: grid;
-    place-items: center;
-  }
-  .page2__inner__a__line1{
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 4rem;
-  }
-
-  #page2__inner{
-    width:80%;
-  }
-  .page2__inner__a__line2{
-    width: 100vw;
-    display: grid;
-    justify-content: center;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 4rem;
-  }
-  #page3__inner1{
-    margin-left: 0;
-    width: 80%;
-  }
-  #page3__inner2{
-    margin-left: 0;
-    width: 80%;
-  }
 }
 
 
@@ -114,34 +80,11 @@
   #header__main ul{
     display: none;
   }
-  .page2__inner__a__line1{
-    width: 100%;
+  #page__inner{
     display: grid;
-    justify-content: center;
-    place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 4rem;
+    width:100%;
   }
-
-  #page2__inner{
-    width:80%;
-  }
-  .page2__inner__a__line2{
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 4rem;
-  }
-  #page3__inner1{
-    margin-left: 0;
-    width: 95%;
-  }
-  #page3__inner2{
-    margin-left: 0;
-    width: 95%;
+  .page__inner__img img{
+    width: min(100%, 60rem);
   }
 }

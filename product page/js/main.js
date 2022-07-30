@@ -208,3 +208,14 @@ function closeAllMore() {
 
   // styling
 document.getElementById("p2h").style.borderColor = 'red'
+
+
+
+
+
+  // btn acheté
+function acheté() {
+  document.getElementById('achete_btn').innerHTML="Acheté";
+  document.getElementById('achete_btn').style.color="white";
+  document.getElementById('achete_btn').style.backgroundColor = "var(--clr-primary-400)";
+}

@@ -138,8 +138,9 @@ body{
 }
 
 #hide_side_bar button img{
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
 }
 
 
@@ -259,17 +260,19 @@ header{
 }
 
 #side_bar_btn li button{
+  margin-top: .25em;
   color: var(--clr-font);
   background-color:transparent;
-  padding: .2em .4em;
+  padding: 0em .4em;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
 #show_side_bar_btn img{
   padding-top: .5em;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.8rem;
+  width: 1.7rem;
 }
 
 
