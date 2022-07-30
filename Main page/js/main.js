@@ -70,7 +70,6 @@ function showSideBar() {
   sideBar.style.display = 'block'
   // sideBar.style.right = '0vw'
   body.style.overflow = 'hidden'
-  sideBar.style.overflowX = 'hidden'
   sideBar.style.overflow = 'auto'
   sideBar.style.animation = 'showing_side_bar .3s ease-out forwards'
 }
