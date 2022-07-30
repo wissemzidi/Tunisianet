@@ -1,1 +1,147 @@
-{\rtf1}
+@media screen and (orientation:landscape) {
+  #side_bar{
+    min-height: 50rem;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  #side_bar_btn{
+    display: block;
+  }
+  #header__main{
+    min-height: 4.5rem;
+  }
+  #header__main .search-bar{
+    margin-top: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #header__main > p{
+    margin: .5em 0;
+  }
+  #header__main ul{
+    margin: .5em 0;
+  }
+  #header__second_line{
+    display: none;
+  }
+  #page3__container{
+    gap: 2rem;
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+  }
+  #page3__inner1{
+    margin-left: 10vw;
+    width: 70%;
+  }
+  #page3__inner2{
+    margin-top: 2rem;
+    margin-left: -10vw;
+    width: 70%;
+  }
+  footer{
+    min-height: 0;
+    height: 120rem;
+  }
+  #footer__cinner{
+    display: grid;
+  }
+  .footer_last-inner{
+    width: 100%;
+  }
+  .footer_last-inner{
+    height: 30rem;
+    top: 80rem;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+  #page2__container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .page2__inner__a__line1{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  #page2__inner{
+    width:80%;
+  }
+  .page2__inner__a__line2{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+  }
+  #page3__inner1{
+    margin-left: 0;
+    width: 80%;
+  }
+  #page3__inner2{
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  #header__main ul{
+    display: none;
+  }
+  .page2__inner__a__line1{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+
+  #page2__inner{
+    width:80%;
+  }
+  .page2__inner__a__line2{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+  #page3__inner1{
+    margin-left: 0;
+    width: 95%;
+  }
+  #page3__inner2{
+    margin-left: 0;
+    width: 95%;
+  }
+}

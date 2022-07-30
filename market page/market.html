@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="shortcut icon" href="">
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <title>Tunisianet</title>
+</head>
+<body>
+
+
+  <!-- side bar for mobile phones -->
+  <aside id="side_bar">
+    <div id="sideBar__container">
+      <div id="sideBar__inner">
+        <div id="head">
+          <h3>Products</h3>
+          <div id="hide_side_bar">
+            <button id="hide_side_bar_btn" onclick=hideSideBar()>
+              <img src="./Main page/assets/icons/delete.png" alt="Close">
+            </button>
+          </div>
+        </div>
+        <main>
+          <ul>
+            <li>
+              <a href="#">Nouveaux</a>
+              <button data-more1="close" id="more1_btn">></button>
+            </li>
+            <ul id="more1" class="side_bar__more">
+              <li><a href="#">Asus ROG 2</a></li>
+              <li><a href="#">Samsung S20 ultra</a></li>
+              <li><a href="#">HP chrome book 2</a></li>
+              <li><a href="#">Samsung TV 56 inch</a></li>
+            </ul>
+            <li>
+              <a href="#">Technologie</a>
+              <button data-more2="close" id="more2_btn">></button>
+            </li>
+            <ul id="more2" class="side_bar__more">
+              <li><a href="#">test2</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+            </ul>
+            <li>
+              <a href="#">Electromenagé</a>
+              <button data-more3="close" id="more3_btn">></button>
+            </li>
+            <ul id="more3" class="side_bar__more">
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+            </ul>
+            <li>
+              <a href="#">Bureautique</a>
+              <button data-more4="close" id="more4_btn">></button>
+            </li>
+            <ul id="more4" class="side_bar__more">
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+            </ul>
+            <li>
+              <a href="#">Telephone</a>
+              <button data-more5="close" id="more5_btn">></button>
+            </li>
+            <ul id="more5" class="side_bar__more">
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+            </ul>
+            <li>
+              <a href="#">Accessoir</a>
+              <button data-more6="close" id="more6_btn">></button>
+            </li>
+            <ul id="more6" class="side_bar__more">
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+              <li><a href="#">test</a></li>
+            </ul>
+          </ul>
+        </main>
+      </div>
+    </div>
+  </aside>
+
+
+
+
+  <header>
+    <main id="header__main">
+      <p>Tunisianet</p>
+      <div class="search-bar">
+        <button type="button"><p>select-product</p></button>
+        <div class="right_side">
+          <input type="text">
+          <button type="button" onclick="console.log('searching...')">
+            <img height="20" width="20" src="Main page/assets/icons/loupe.png" alt="">
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#page3">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      <ol id="side_bar_btn">
+        <li>
+          <button id="show_side_bar_btn" type="button" onclick=showSideBar()><img src="./Main page/assets/icons/menu.png" alt="Menu"></button>
+        </li>
+      </ol>
+    </main>
+  </header>
+
+  <main id="header__second_line">
+    <div id="content">
+      <div class="first_box" onmouseover="afficheBox1()" onmouseleave="hideBox1()">
+        <h3>Electroménagé</h3>
+        <ul id="list1">
+          <li><a href="">séche chevaux</a></li>
+          <li><a href="">vaisaile</a></li>
+          <li><a href="">lave lang</a></li>
+          <li><a href="">Robot</a></li>
+          <li><a href="">Mixer</a></li>
+        </ul>
+      </div>
+      <div class="first_box" onmouseover="afficheBox2()" onmouseleave="hideBox2()">
+        <h3>Technologie</h3>
+        <ul id="list2">
+          <li><a href="#1">Robotique</a></li>
+          <li><a href="#2">Ram</a></li>
+          <li><a href="#3">Ssd</a></li>
+          <li><a href="#4">Hard drive</a></li>
+          <li><a href="">Boitier</a></li>
+        </ul>
+      </div>
+      <div class="first_box" onmouseover="afficheBox3()" onmouseleave="hideBox3()">
+        <h3>Bureautique</h3>
+        <ul id="list3">
+          <li><a href="">Case</a></li>
+          <li><a href="">Carte mère</a></li>
+          <li><a href="">Télephone</a></li>
+          <li><a href="">power bank</a></li>
+          <li><a href="">support</a></li>
+        </ul>
+      </div>
+      <div class="first_box" onmouseover="afficheBox4()" onmouseleave="hideBox4()">
+        <h3>Telephone</h3>
+        <ul id="list4">
+          <li><a href="">smart phone</a></li>
+          <li><a href="">phone</a></li>
+          <li><a href="">Android</a></li>
+          <li><a href="">kit</a></li>
+          <li><a href="">casque</a></li>
+        </ul>
+      </div>
+      <div class="first_box" onmouseover="afficheBox5()" onmouseleave="hideBox5()">
+        <h3>Accessoir</h3>
+        <ul id="list5">
+          <li><a href="">pile</a></li>
+          <li><a href="">generateur</a></li>
+          <li><a href="">venilateur</a></li>
+          <li><a href="">AMD</a></li>
+          <li><a href="">Intel</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  
+
+
+
+
+
+
+  <section id="page">
+    <div id="page__container">
+      <div class="page__inner__a__line1">
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2 id="p2h">Sech chevaux</h2>
+              <img src="./assets/img/1b650ae535381aee2ddcbae354dc2867a0891e03_tcl tele square (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 579DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>iphone 12 pro max</h2>
+              <img src="./assets/img/755c2926c393b18709958ee91df1c304689456c6_Lenovo-ThinkStation-P350.jpg" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 3679DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>ryzen 5 5600g</h2>
+              <img src="./assets/img/a9daafcbb4e456eff66e631754b3b183b19ba0fc_square xtrike me kleyboard (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 59DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>RTX 3090</h2>
+              <img src="./assets/img/de6c1aff06fd9810d4527e705ac1576f565db3ed_square teamgroup mp33 (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 199DT</h3></center>
+          </a>
+        </div>
+      </div>
+      <div class="page__inner__a__line1">
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2 id="p2h">Sech chevaux</h2>
+              <img src="./assets/img/1b650ae535381aee2ddcbae354dc2867a0891e03_tcl tele square (1).png" alt="">
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+              <center><h3>Prix: 579DT</h3></center>
+            </div>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>iphone 12 pro max</h2>
+              <img src="./assets/img/755c2926c393b18709958ee91df1c304689456c6_Lenovo-ThinkStation-P350.jpg" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 3679DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>ryzen 5 5600g</h2>
+              <img src="./assets/img/a9daafcbb4e456eff66e631754b3b183b19ba0fc_square xtrike me kleyboard (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 59DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>RTX 3090</h2>
+              <img src="./assets/img/de6c1aff06fd9810d4527e705ac1576f565db3ed_square teamgroup mp33 (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 199DT</h3></center>
+          </a>
+        </div>
+      </div>
+      <div class="page__inner__a__line1">
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2 id="p2h">Sech chevaux</h2>
+              <img src="./assets/img/1b650ae535381aee2ddcbae354dc2867a0891e03_tcl tele square (1).png" alt="">
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+              <center><h3>Prix: 579DT</h3></center>
+            </div>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>iphone 12 pro max</h2>
+              <img src="./assets/img/755c2926c393b18709958ee91df1c304689456c6_Lenovo-ThinkStation-P350.jpg" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 3679DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>ryzen 5 5600g</h2>
+              <img src="./assets/img/a9daafcbb4e456eff66e631754b3b183b19ba0fc_square xtrike me kleyboard (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 59DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>RTX 3090</h2>
+              <img src="./assets/img/de6c1aff06fd9810d4527e705ac1576f565db3ed_square teamgroup mp33 (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 199DT</h3></center>
+          </a>
+        </div>
+      </div>
+      <div class="page__inner__a__line1">
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2 id="p2h">Sech chevaux</h2>
+              <img src="./assets/img/1b650ae535381aee2ddcbae354dc2867a0891e03_tcl tele square (1).png" alt="">
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+              <center><h3>Prix: 579DT</h3></center>
+            </div>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>iphone 12 pro max</h2>
+              <img src="./assets/img/755c2926c393b18709958ee91df1c304689456c6_Lenovo-ThinkStation-P350.jpg" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 3679DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>ryzen 5 5600g</h2>
+              <img src="./assets/img/a9daafcbb4e456eff66e631754b3b183b19ba0fc_square xtrike me kleyboard (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 59DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>RTX 3090</h2>
+              <img src="./assets/img/de6c1aff06fd9810d4527e705ac1576f565db3ed_square teamgroup mp33 (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 199DT</h3></center>
+          </a>
+        </div>
+      </div>
+      <div class="page__inner__a__line1">
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2 id="p2h">Sech chevaux</h2>
+              <img src="./assets/img/1b650ae535381aee2ddcbae354dc2867a0891e03_tcl tele square (1).png" alt="">
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+              <center><h3>Prix: 579DT</h3></center>
+            </div>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>iphone 12 pro max</h2>
+              <img src="./assets/img/755c2926c393b18709958ee91df1c304689456c6_Lenovo-ThinkStation-P350.jpg" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 3679DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>ryzen 5 5600g</h2>
+              <img src="./assets/img/a9daafcbb4e456eff66e631754b3b183b19ba0fc_square xtrike me kleyboard (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 59DT</h3></center>
+          </a>
+        </div>
+        <div id="page__inner">
+          <a href="#">
+            <div class="img">
+              <h2>RTX 3090</h2>
+              <img src="./assets/img/de6c1aff06fd9810d4527e705ac1576f565db3ed_square teamgroup mp33 (1).png" alt="">
+            </div>
+            <center><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, hic.</p></center>
+            <center><h3>Prix: 199DT</h3></center>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer id="footer">
+    <div id="footer__heading">
+      <h2>More about Us</h2>
+      <div id="footer__heading__links">
+        <a href="#"><img src="./assets/icons/email.png" alt=""></a>
+        <a href="#"><img src="./assets/icons/facebook-logo.png" alt=""></a>
+        <a href="#"><img src="./assets/icons/messenger.png" alt=""></a>
+        <a href="#"><img src="./assets/icons/up-arrow.png" alt=""></a>
+      </div>
+    </div>
+    <div id="footer__container">
+      <div id="footer__cinner">
+        <div id="footer__inner">
+          <h3>Nouveaux</h3>
+          <a href="#">> Asus Rog 2</a>
+          <a href="#">> Hp notebook</a>
+          <a href="#">> gaming chair</a>
+          <a href="#">> mouse</a>
+          <a href="#">> clavier</a>
+        </div>
+        <div id="footer__inner">        
+          <h3>Technologie</h3>
+          <a href="#">> Ram</a>
+          <a href="#">> Carte-mère</a>
+          <a href="#">> Boitier-gamer</a>
+          <a href="#">> Cpu</a>
+          <a href="#">> Gpu</a></div>
+        <div id="footer__inner">
+          <h3>Electromenagé</h3>
+          <a href="#">> lave-lang</a>
+          <a href="#">> refrégirateur</a>
+          <a href="#">> Robo</a>
+          <a href="#">> Thermometer</a>
+          <a href="#">> Console</a>
+        </div>
+      </div>
+      <div id="footer__inner" class="footer_last-inner">
+        <div id="inner__send-mail">
+          <div id="inner__send-mail__box">
+            <h4>Send A Mail</h4>
+            <div id="inner__send-mail__box__input">
+              <input class="input1" type="email" placeholder="E-Mail">
+              <div id="inner__send-mail__box__input_2">
+                <textarea placeholder="Write Here"></textarea>
+                <input type="submit"></input>
+              </div>
+            </div>
+          </div>
+          <div id="inner__send-mail__contact">
+            <h3>Contact</h3>
+            <div class="inner__send-mail__contact__info">
+              <h4>+126 25 561 800</h4>
+              <h4>+126 25 561 875</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
